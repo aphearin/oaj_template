@@ -1,0 +1,93 @@
+\documentclass[numberedappendix,twocolumn,twocolappendix]{openjournal}
+
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{longtable}
+\usepackage{epsf}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\DeclareMathOperator{\sech}{sech}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,filecolor=blue,urlcolor=blue}
+\usepackage{cleveref}
+\usepackage{bm}		% Bold maths symbols, including upright Greek
+
+\usepackage{natbib}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{macros.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\title{DSPS: Differentiable Stellar Population Synthesis}
+\shorttitle{DSPS: Differentiable Stellar Population Synthesis}
+
+\author{Andrew P. Hearin$^{1,\star}$}
+\author{Jon\'{a}s Chaves-Montero$^{1,2}$}
+\author{Andrew Benson$^3$}
+\author{Alex Alarcon$^1$}
+\author{Matthew R. Becker$^1$}
+
+\affiliation{$^1$HEP Division, Argonne National Laboratory, 9700 South Cass Avenue, Lemont, IL 60439, USA}
+\affiliation{$^2$Donostia International Physics Centre, Paseo Manuel de Lardizabal 4, 20018 Donostia-San Sebastian, Spain}
+\affiliation{$^3$Carnegie Observatories, 813 Santa Barbara Street, Pasadena, CA 91101}
+\thanks{$^{\star}$E-mail:ahearin@anl.gov}
+
+\shortauthors{Hearin et al.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+Some abstract
+\end{abstract}
+\keywords{Cosmology: large-scale structure of Universe; methods: N-body simulations}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+\vspace{1cm}
+
+\twocolumngrid
+
+\section{Introduction}
+\label{sec:intro}
+
+
+
+This is our intro.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{Summary}
+\label{sec:summary}
+
+We conclude by summarizing our primary results:
+\begin{enumerate}
+    \item Some item
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Acknowledgements}
+We thank some people.
+
+We thank the developers of {\tt NumPy} \citep{numpy_ndarray}, {\tt SciPy} \citep{scipy}, Jupyter \citep{jupyter}, IPython \citep{ipython}, scikit-learn \citep{scikit_learn}, JAX \citep{jax2018github}, and Matplotlib \citep{matplotlib} for their extremely useful free software. While writing this paper we made extensive use of the Astrophysics Data Service (ADS) and {\tt arXiv} preprint repository.
+
+Work done at Argonne National Laboratory was supported under the DOE contract DE-AC02-06CH11357. We gratefully acknowledge use of the Bebop cluster in the Laboratory Computing Resource Center at Argonne National Laboratory.
+
+\bibliographystyle{aasjournal}
+\bibliography{bibliography}
+
+\appendix
+\input{appendices.tex}
+
+\end{document}
